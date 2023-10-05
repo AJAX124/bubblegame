@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:futura;
+    src: url(./Futura-Bold.ttf);
+}
+@font-face {
+    font-family:gilroy;
+    src: url(./Gilroy-Medium.ttf);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: palegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#heading{
+    position: absolute;
+    height: 10px;
+    width: 50%;
+    font-family: futura;
+    top: 8.5%;
+    left: 8%;
+}
+#heading h1{
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+}
+#panel{
+    height: 90%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#ptop{
+    height:80px;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#elem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  font-family: futura;
+  font-weight: 400;
+}
+#box{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(18, 119, 57);
+    font-size: 20px;
+    font-weight: 600;
+}
+#pbtm{
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#bubble{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(18, 119, 57);
+    font-size: 1.5vw;
+    font-family:gilroy;
+    font-weight: 200;
+    color: #fff;
+    cursor: pointer;
+}
+#bubble:hover{
+    background-color: rgb(105, 192, 118);;
+}
+
+@media (max-width:667px) {
+    #main{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: palegreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #heading{
+        position: absolute;
+        top: 98.5%;
+        left: 53%;
+        transform: translate(-50%,-50%);
+        z-index: 9;
+    }
+    #heading h1{
+        color: black;
+        font-size: 3vw;
+    }
+    #ptop{
+        height:80px;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+    #bubble{
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgb(18, 119, 57);
+        font-size: 4vw;
+        font-family:gilroy;
+        font-weight: 200;
+        color: #fff;
+        cursor: pointer;
+    }
+    #panel{
+        height: 95%;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
